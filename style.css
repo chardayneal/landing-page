@@ -1,10 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto-Flex);
 
 body {
     font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -17,17 +18,17 @@ body {
 }
 
 .space {
-    padding-left: 150px;
-    padding-right: 150px;
+    width: 900px;
     display: flex;
+    margin: auto;
+    
+
 }
 .header {
     display: flex;
     justify-content: space-between;
     flex: 1;
     padding-bottom: 100px;
-    margin: 0;
-    padding: 0 0 100px 0;
 }
 
 .logo {
@@ -43,14 +44,14 @@ body {
 }
 
 .subsection {
-    width: 450px;
     display: flex;
     flex-direction: column;
-    flex: 0 0 auto;
-    gap: 15px;
+    flex: 0 0 450px;
+    padding-right: 50px;
 }
 
 .subheading {
+    flex: 0;
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
@@ -58,27 +59,83 @@ body {
 
 .subtext {
     font-size: 18px;
-    font-weight: lighter;
     color: #F9FAF8;
+    padding-bottom: 10px;
 }
 
 .subsection button {
-    width: 100px;
+    border-radius: 8px;
+    border: 0px;
+    width: 125px;
     font-size: 15px;
     font-weight: 200;
     background-color: #3882f6;
     color:#F9FAF8;
     flex: 0 0 auto;
-    padding: 15px 0;
+    padding: 10px 0;
     
 }
 
+.img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: auto;
+    background-color: #5c6b80;
+    flex: 0 1 auto;
+    color:#F9FAF8
+}
+
 .content-one {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: auto;
+}
+
+.header-box {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.card {
+    height: 180px;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+}
+
+.card-text {
+    font-weight: lighter;
+    padding-top: 15px;
+    padding-bottom: 75px;
+
 }
 
 .qoute {
-    flex: 1;
+    background: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    flex-grow: 1;
 
 }
 
@@ -105,12 +162,10 @@ ul {
     padding: 0;
     list-style-type: none;
     display: flex;
+    gap: 25px;
 }
 
 a {
+    color: #F9FAF8;
     text-decoration: none;
-}
-
-img {
-    flex: 1;
 }
