@@ -1,131 +1,191 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto-Flex);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Noto Serif", sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
-.hero {
-    background: #1F2937;
+.section-one {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 20px 150px 0 150px;
 }
 
 .header {
     display: flex;
-    flex: 1;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    position: fixed;
+    overflow: hidden;
+    background-color: #ffffff;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bolder;
-    color: #F9FAF8;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+}
+
+#logo-pic {
+    width: 200px;
+    height: 75px;
+    padding: 0;
+    margin: 0;
 }
 
 .right-links {
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
+    padding-right: 30px;
 }
 
-.title {
+.hero {
+    height: 300px;
+    background-color: #678983; 
     display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 100px;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    flex: 0 0;
+    color: black;
+    margin: 85px 0 0 0; 
 }
 
-.subsection {
+.hero-info {
+    width: 500px;
     display: flex;
     flex-direction: column;
-    flex: 0 1 450px;
-    padding-right: 50px;
-    padding-bottom: 10px;
+    justify-content: center;
+    flex: 2 0;
+    margin: 0 40px 0 40px;
+    gap: 6px;
+    text-align: start;
 }
 
-.subheading {
-    flex: 0;
-    font-size: 48px;
+.hero-header {
+    width: 650px;
+    flex: 0 1 auto;
+    font-size: 30px;
     font-weight: bolder;
-    color: #F9FAF8;
 }
 
-.subtext {
+.hero-text {
+    width: 650px;
     font-size: 18px;
-    color: #F9FAF8;
     padding-bottom: 10px;
+    flex: 0 1 auto;
+}
+
+#hero-box {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 35px;
+}
+
+#hero-box ul {
+    flex-direction: column;
     flex: 0 1;
 }
 
-#button-one {
-    border-radius: 8px;
-    border: 0px;
+
+#hero-list li img {
+    width: 10%;
+    height: auto;
+}
+
+#pencil-icon {
+    width: 3%;
+    height: auto;
+}
+
+#hero-button {
+    border-radius: 25px;
+    border: 1px solid black; 
     width: 125px;
     font-weight: 200;
-    background-color: #3882f6;
-    color:#F9FAF8;
-    flex: 1 0 auto;
+    background-color: transparent;
+    flex: 0 0 auto;
     padding: 10px 0;
-    
+    align-self: flex-start;
+    margin: 0 0 10px 35px;
 }
 
-.img-text {
+.hero-img {
+    width: auto;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 255px;
-    background-color: #5c6b80;
-    flex: 1 1 auto;
-    color:#F9FAF8;
+    flex: 1 1 auto; 
 }
 
-.content-one {
+#consult-img {
+    max-width: 100;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.section-two {
+    background-color: #ECB365;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 45px 150px 75px 150px;
+    padding: 45px 100px 75px 100px;
 }
 
-.header-box {
+.title-header {
     width: 600px;
     font-size: 36px;
     font-weight: bolder;
-    color: #1F2937;
+    color: black;
     text-align: center;
     flex: 1 0 auto;
     padding-bottom: 45px;
 }
 
-.container {
+.title-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0 25px;
-    gap: 60px;
+    padding: 0 10px;
+    gap: 40px;
 }
 
-.section {
+.card-group {
     display: flex;
     justify-content: center;
-    width: 360px;
-    gap: 60px;
+    width: 340px;
+    gap: 40px;
 }
 .cards {
     display: flex;
     flex-direction: column;
     width: 150px;
+    border: 3px solid black;
 }
 
-.card {
-    height: 150px;
-    border: 4px solid #3882f6;
-    border-radius: 12px;
+.card-img {
+    display: flex;
+    height: 100px;
+    border: 3px solid black;
+   
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#img-one, #img-four {
+    width: max-content;
 }
 
 .card-text {
@@ -135,8 +195,8 @@ body {
     text-align: center;
 }
 
-.quote {
-    background: #e5e7eb;
+.section-three {
+    background: #E6DDC4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,42 +204,45 @@ body {
     flex-grow: 1;
 }
 
-.single {
+.quote {
     width: 1000px;
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin: 26px;
 }
 
 .quote-text {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: lighter;
     font-style: italic;
-    color: #1F2937;
+    color: black;
     padding-bottom: 5px;
+    
 
 }
 
-.author {
+.quote-author {
     font-size: 24px;
     font-weight: bolder;
     align-self: flex-end;
     padding-right: 30px;
 }
 
-.action {
+.section-four {
     display: flex;
     height: 300px;
     justify-content: center;
     align-items: center;
     padding: 0 100px;
+    background-color: #181D31;
 }
 
-.box {
-    width: 1000px;
+.action {
+    width: 100%;
     display: flex;
     flex: 1 1;
-    background-color: #3882f6;
+    background-color: #678983;
     border-radius: 8px;
     justify-content: space-around;
     height: 100px;
@@ -187,31 +250,28 @@ body {
     margin: 0 30px;
 }
 
-.information {
-    width: 400px;
+.action-info {
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 2 0;
+    color: #F0E9D2;
 }
 
-.info-head {
-    width: 400px;
+.action-header {
     font-size: 24px;
-    font-weight: bold;
-    color: #F9FAF8;
+    font-weight: bolder;
 
 }
 
-.info-text {
-    width: 400px;
+.action-text {
     font-size: 20px;
     font-weight: light;
-    color: #F9FAF8;
 
 }
 
-.button {
+.button-two {
     display: flex;
     flex: 1 0;
     align-items: center;
@@ -221,13 +281,13 @@ body {
 
 .footer {
     display: flex;
-    background-color: #1F2937;
+    background-color: #ffffff;
     justify-content: center;
     flex: none;
 }
 
 .footer-text {
-    color: #F9FAF8;
+    color: black;
     padding: 25px 0;
 }
 
@@ -241,17 +301,17 @@ ul {
 }
 
 a {
-    color: #F9FAF8;
+    color: black;
     text-decoration: none;
 }
 
-#button-two {
-    font-size: 22px;
+#action-button {
+    font-size: 18px;
     border-radius: 8px;
-    border: 2px solid #F9FAF8;
+    border: 2px solid #F0E9D2;
     width: 125px;
     font-weight: 200;
-    background-color: #3882f6;
-    color: #F9FAF8;
+    background-color: transparent;
     padding: 10px 0;
+    color: #F0E9D2;
 }
