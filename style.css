@@ -1,16 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 body {
-    font-family: "Noto Serif", sans-serif;
+    font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
-}
-
-.section-one {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 
 .header {
@@ -24,6 +19,7 @@ body {
     position: fixed;
     overflow: hidden;
     background-color: #ffffff;
+    border-bottom: 2px solid black;
 }
 
 .logo {
@@ -47,62 +43,76 @@ body {
     padding-right: 30px;
 }
 
-.hero {
-    height: 300px;
-    background-color: #678983; 
+.bigger {
+    font-family: "Libre Franklin";
+}
+
+.section-one {
+    height: 500px;
     display: flex;
-    justify-content: space-around;
+    flex: 1;
+    margin: 85px 0 0 0;
+}
+
+.hero {
+    border-radius: 8px;
+    display: flex;
     flex-wrap: wrap-reverse;
-    flex: 0 0;
+    justify-content: center;
+    gap: 25px;
+    flex: 1 0;
     color: black;
-    margin: 85px 0 0 0; 
+    margin: 20px; 
 }
 
 .hero-info {
-    width: 500px;
+    width: 450px;
+    padding: 30px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 2 0;
-    margin: 0 40px 0 40px;
-    gap: 6px;
-    text-align: start;
+    align-self: center;
+    flex: 0 1 auto;
+    gap: 20px;
 }
 
 .hero-header {
-    width: 650px;
-    flex: 0 1 auto;
     font-size: 30px;
     font-weight: bolder;
 }
 
 .hero-text {
-    width: 650px;
-    font-size: 18px;
+    font-size: 15px;
     padding-bottom: 10px;
-    flex: 0 1 auto;
+
 }
 
-#hero-box {
+#hero-list {
     display: flex;
     flex-direction: column;
-    padding: 5px 35px;
 }
 
-#hero-box ul {
-    flex-direction: column;
-    flex: 0 1;
+.hero-item {
+    display: flex;
+    background-color: bisque;
+    align-items: center;
+    gap: 10px;
+
 }
 
-
-#hero-list li img {
-    width: 10%;
-    height: auto;
+#key-icon {
+    width: 25px;
+    height: 25px;
 }
 
-#pencil-icon {
-    width: 3%;
-    height: auto;
+#control-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#headset-icon {
+    width: 25px;
+    height: 25px;
 }
 
 #hero-button {
@@ -114,160 +124,166 @@ body {
     flex: 0 0 auto;
     padding: 10px 0;
     align-self: flex-start;
-    margin: 0 0 10px 35px;
+    margin-right:10px;
 }
 
-.hero-img {
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1 1 auto; 
-}
 
 #consult-img {
-    max-width: 100;
+    display: flex;
     height: auto;
-    object-fit: cover;
-
+    border-radius: 8px;
+    flex: 1;
 }
 
 .section-two {
-    background-color: #ECB365;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 45px 100px 75px 100px;
+    padding: 50px 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    flex: 1 0;
+    background-color: bisque;
 }
 
 .title-header {
-    width: 600px;
-    font-size: 36px;
-    font-weight: bolder;
+    font-size: 30px;
+    font-weight:bolder;
     color: black;
-    text-align: center;
     flex: 1 0 auto;
-    padding-bottom: 45px;
+    border-bottom: 2px solid #4c504f;
+    padding-bottom: 15px;
+    margin-bottom: 45px;
 }
 
 .title-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    flex: 1 0;
     padding: 0 10px;
+    margin-top: 40px;
     gap: 40px;
 }
 
 .card-group {
     display: flex;
-    justify-content: center;
-    width: 340px;
-    gap: 40px;
+    justify-content: space-around;
+    flex: 1 0;
+    gap: 50px;
 }
 .cards {
     display: flex;
     flex-direction: column;
-    width: 150px;
-    border: 3px solid black;
+    gap: 10px;
+    flex: 1 0 150px;
 }
 
 .card-img {
     display: flex;
-    height: 100px;
-    border: 3px solid black;
-   
+    height: 75px;
+    justify-content: center;
 }
 
 .card-img img {
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
-#img-one, #img-four {
-    width: max-content;
+.card {
+    display: flex;
+    flex: 1 0;
+    
+}
+
+.card-header {
+    font-size: 24px;
+    flex: 1 0;
 }
 
 .card-text {
-    width: 150px;
     font-weight: lighter;
-    padding: 25px 0;
-    text-align: center;
+    color: #414645;
+    flex: 1 0;
 }
 
 .section-three {
-    background: #E6DDC4;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 350px;
     flex-grow: 1;
+    
+}
+#holder {
+    display: flex;
+    justify-content: between;
+    flex-wrap: wrap;
+    padding: 30px 75px;
+    gap: 45px;
 }
 
-.quote {
-    width: 1000px;
+.quote-box {
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 26px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 25px;
+    
 }
 
 .quote-text {
-    font-size: 30px;
+    width: 100%;
+    font-size: 24px;
     font-weight: lighter;
     font-style: italic;
-    color: black;
+    color: #414645;
     padding-bottom: 5px;
-    
+    flex: 1 0;
 
 }
 
 .quote-author {
     font-size: 24px;
     font-weight: bolder;
-    align-self: flex-end;
     padding-right: 30px;
 }
 
-.section-four {
-    display: flex;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    padding: 0 100px;
-    background-color: #181D31;
-}
-
 .action {
-    width: 100%;
-    display: flex;
-    flex: 1 1;
-    background-color: #678983;
+    border: 2px solid black;
     border-radius: 8px;
-    justify-content: space-around;
-    height: 100px;
-    padding: 30px 60px;
-    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    gap: 15px;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    padding: 30px 0 30px 10px;
+
 }
 
 .action-info {
-    width: 600px;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 2 0;
-    color: #F0E9D2;
+    flex: 1 0;
+    gap: 15px;
+    padding: 0 15px;
 }
 
 .action-header {
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: bold;
 
 }
 
 .action-text {
-    font-size: 20px;
-    font-weight: light;
+    font-size: 18px;
+    font-weight: lighter;
 
 }
 
@@ -279,11 +295,12 @@ body {
     justify-content: center;
 }
 
+
 .footer {
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    flex: none;
+    flex: 1;
 }
 
 .footer-text {
@@ -308,10 +325,9 @@ a {
 #action-button {
     font-size: 18px;
     border-radius: 8px;
-    border: 2px solid #F0E9D2;
+    border: 2px solid black;
     width: 125px;
     font-weight: 200;
     background-color: transparent;
     padding: 10px 0;
-    color: #F0E9D2;
 }
