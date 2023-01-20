@@ -19,14 +19,15 @@ body {
     position: fixed;
     overflow: hidden;
     background-color: #ffffff;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #637B89;
 }
 
 .logo {
     display: flex;
     margin: 0;
     padding: 0;
-    padding-left: 30px;
+    padding-left: 15px;
+    align-items: flex-end;
 }
 
 #logo-pic {
@@ -40,7 +41,8 @@ body {
     display: flex;
     justify-content: flex-end;
     align-self: flex-end;
-    padding-right: 30px;
+
+    text-align: center;
 }
 
 .bigger {
@@ -66,35 +68,39 @@ body {
 }
 
 .hero-info {
-    width: 450px;
-    padding: 30px 60px;
+    width: 355px;
+    margin: 30px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
     flex: 0 1 auto;
     gap: 20px;
+
 }
 
 .hero-header {
     font-size: 30px;
     font-weight: bolder;
+    color: #FF7E20;
 }
 
 .hero-text {
     font-size: 15px;
     padding-bottom: 10px;
+    color: #637B89;
 
 }
 
 #hero-list {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    color: #637B89;
 }
 
 .hero-item {
     display: flex;
-    background-color: bisque;
     align-items: center;
     gap: 10px;
 
@@ -117,10 +123,11 @@ body {
 
 #hero-button {
     border-radius: 25px;
-    border: 1px solid black; 
+    background-color: #FF7E20;
+    border-style: none;
+    color: #ffffff; 
     width: 125px;
     font-weight: 200;
-    background-color: transparent;
     flex: 0 0 auto;
     padding: 10px 0;
     align-self: flex-start;
@@ -130,6 +137,7 @@ body {
 
 #consult-img {
     display: flex;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     flex: 1;
@@ -140,16 +148,15 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 50px 20px;
-    border-radius: 8px;
     margin: 15px 0;
     flex: 1 0;
-    background-color: bisque;
+    background-color: #FF7E20;
+    color: aliceblue;
 }
 
 .title-header {
     font-size: 30px;
     font-weight:bolder;
-    color: black;
     flex: 1 0 auto;
     border-bottom: 2px solid #4c504f;
     padding-bottom: 15px;
@@ -163,13 +170,14 @@ body {
     flex: 1 0;
     padding: 0 10px;
     margin-top: 40px;
+    margin: auto;
     gap: 40px;
 }
 
 .card-group {
     display: flex;
     justify-content: space-around;
-    flex: 1 0;
+    flex: 1 0 355px;
     gap: 50px;
 }
 .cards {
@@ -183,6 +191,7 @@ body {
     display: flex;
     height: 75px;
     justify-content: center;
+    padding-bottom: 15px;
 }
 
 .card-img img {
@@ -224,7 +233,6 @@ body {
 
 .quote-box {
     height: 100%;
-    border: 2px solid black;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -240,14 +248,14 @@ body {
     font-size: 24px;
     font-weight: lighter;
     font-style: italic;
-    color: #414645;
+    color: #637B89;
     padding-bottom: 5px;
     flex: 1 0;
 
 }
 
 .quote-author {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bolder;
     padding-right: 30px;
 }
@@ -278,19 +286,21 @@ body {
 .action-header {
     font-size: 24px;
     font-weight: bold;
+    color: #FF7E20;
 
 }
 
 .action-text {
     font-size: 18px;
     font-weight: lighter;
+    color: #637B89;
 
 }
 
 .button-two {
     display: flex;
     flex: 1 0;
-    align-items: center;
+    align-self: center;
     width: 200px;
     justify-content: center;
 }
@@ -304,7 +314,7 @@ body {
 }
 
 .footer-text {
-    color: black;
+    color: #637B89;
     padding: 25px 0;
 }
 
@@ -318,16 +328,23 @@ ul {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
+    padding: 15px;
 }
 
 #action-button {
-    font-size: 18px;
+    
     border-radius: 8px;
-    border: 2px solid black;
+    border: none;
     width: 125px;
     font-weight: 200;
-    background-color: transparent;
     padding: 10px 0;
+    align-self: center;
+}
+
+button {
+    color: white;
+    background-color: #FF7E20;
+    font-size: 18px;
 }
